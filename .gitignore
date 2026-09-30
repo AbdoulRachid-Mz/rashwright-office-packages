@@ -1,0 +1,62 @@
+# ==========================================
+# Rashwright Monorepo — .gitignore
+# ==========================================
+
+# Dépendances
+node_modules/
+.pnp
+.pnp.js
+.bun/
+
+# Sorties de compilation (distribuables générés par bun build / tsc)
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# Caches et builds d'outils
+.cache/
+.turbo/
+.next/
+.expo/
+.expo-shared/
+
+# Fichiers de log
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Fichiers d'environnement & secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+!.env.example
+
+# Couverture de tests
+coverage/
+.nyc_output/
+
+# Fichiers système & OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# Éditeurs & IDE
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json

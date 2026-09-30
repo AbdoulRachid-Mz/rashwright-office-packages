@@ -1,0 +1,37 @@
+{
+  "name": "@rashwright/ui-web",
+  "version": "0.1.0",
+  "description": "Bibliothèque de composants UI Web pour l'écosystème Rashwright (React, Next.js, shadcn/ui, Tailwind v4)",
+  "type": "module",
+  "main": "./index.tsx",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": "./index.tsx",
+    "./components/*": "./components/*.tsx",
+    "./hooks/*": "./hooks/*.ts",
+    "./utils/*": "./utils/*.ts",
+    "./contexts/*": "./contexts/*.tsx",
+    "./providers/*": "./providers/*.tsx",
+    "./types/*": "./types/*.ts"
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "peerDependencies": {
+    "next": ">=15.0.0",
+    "react": ">=19.0.0",
+    "react-dom": ">=19.0.0"
+  },
+  "dependencies": {
+    "@rashwright/core": "workspace:*",
+    "@rashwright/upload": "workspace:*",
+    "@rashwright/utils": "workspace:*",
+    "@rashwright/validation": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.5.0"
+  }
+}

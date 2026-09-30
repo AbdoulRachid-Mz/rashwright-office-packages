@@ -1,0 +1,24 @@
+{
+  "name": "@rashwright/utils",
+  "version": "0.1.0",
+  "description": "Utilitaires purs et génériques pour tous les projets Rashwright (Web, Mobile, API)",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "bun build ./src/index.ts --outdir ./dist --target node --format esm && bun x tsc --emitDeclarationOnly --outDir ./dist",
+    "check-types": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}

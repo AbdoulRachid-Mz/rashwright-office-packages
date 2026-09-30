@@ -1,0 +1,30 @@
+{
+  "name": "@rashwright/api",
+  "version": "0.1.0",
+  "description": "Client HTTP universel et helpers de réponses serveur pour l'écosystème Rashwright",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "bun build ./src/index.ts --outdir ./dist --target node --format esm && bun x tsc --emitDeclarationOnly --outDir ./dist",
+    "check-types": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@rashwright/core": "workspace:*",
+    "@rashwright/logger": "workspace:*",
+    "axios": "^1.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.5.0"
+  }
+}

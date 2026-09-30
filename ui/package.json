@@ -1,0 +1,10 @@
+{
+  "name": "@rashwright/ui",
+  "version": "0.1.0",
+  "description": "Composants UI Web et Mobile de l'écosystème Rashwright",
+  "type": "module",
+  "exports": {
+    "./web": "./web/index.tsx",
+    "./mobile": "./mobile/index.ts"
+  }
+}

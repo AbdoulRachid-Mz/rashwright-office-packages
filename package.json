@@ -1,0 +1,23 @@
+{
+  "name": "@rashwright/monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "core",
+    "utils",
+    "logger",
+    "validation",
+    "api",
+    "storage",
+    "upload",
+    "ui",
+    "ui/*"
+  ],
+  "scripts": {
+    "build": "bun run --filter '*' build",
+    "check-types": "bun run --filter '*' check-types",
+    "test": "bun run --filter '*' test",
+    "clean": "bun run --filter '*' clean"
+  },
+  "packageManager": "bun@1.4.2"
+}
