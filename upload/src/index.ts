@@ -28,6 +28,21 @@ export {
 } from './providers/cloudinary-provider.js';
 
 export {
+  FirebaseStorageProvider,
+  type FirebaseStorageConfig,
+} from './providers/firebase-provider.js';
+
+export {
+  VercelBlobProvider,
+  type VercelBlobConfig,
+} from './providers/vercel-blob-provider.js';
+
+export {
+  LocalUploadProvider,
+  type LocalUploadConfig,
+} from './providers/local-provider.js';
+
+export {
   MockUploadProvider,
   type MockProviderOptions,
 } from './providers/mock-provider.js';

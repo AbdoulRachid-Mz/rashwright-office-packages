@@ -1,25 +1,17 @@
-export { default as PropertyCard } from "./PropertyCard";
-export { default as PropertyCardHorizontal } from "./PropertyCardHorizontal";
-export { default as OrganizationCard } from "./OrganizationCard";
-export { default as CategoryChips } from "./CategoryChips";
-export { default as StatsCard } from "./StatsCard";
-export { default as EmptyState } from "./EmptyState";
-export { default as BadgeStatus } from "./BadgeStatus";
-export { default as FilterBottomSheet, type FilterState } from "./FilterBottomSheet";
-export { default as ConversationCard } from "./ConversationCard";
-export { default as MessageBubble } from "./MessageBubble";
-export { default as MediaGallery } from "./MediaGallery";
-export { default as CreateAgencyPromptModal } from "./CreateAgencyPromptModal";
-export {
-  PropertyFormStep1,
-  PropertyFormStep2,
-  PropertyFormStep3,
-  DEFAULT_DATA,
-  type PropertyFormData,
-  type PropertyFormStepProps,
-} from "./PropertyFormSteps";
-export { default as LocationPickerDrawer } from "./LocationPickerDrawer";
-export { default as PreferencesSetupModal, loadUserPrefs, saveUserPrefs, hasShownPrefs, type UserPrefs } from "./PreferencesSetupModal";
+/**
+ * packages/ui/mobile/components/shared/index.ts
+ *
+ * Export des composants d'interface partagés réutilisables.
+ */
 
-
-
+export { default as BadgeStatus } from './BadgeStatus';
+export { default as Confetti } from './Confetti';
+export { default as ConnectionIndicator } from './ConnectionIndicator';
+export { default as EmptyState } from './EmptyState';
+export { default as InteractionButton } from './InteractionButton';
+export { default as MediaGallery } from './MediaGallery';
+export { default as StatsCard } from './StatsCard';
+export { default as ToggleButton } from './toggle-button';
+export { default as TransitionAnimations } from './TransitionAnimations';
+export { default as UploadImage } from './upload-image';
+export { default as UploadVideo } from './upload-video';

@@ -12,6 +12,7 @@ packages/
 ├── bun.lock                  # Lockfile unifié du monorepo
 ├── tsconfig.base.json        # Configuration TypeScript stricte partagée
 ├── README.md                 # Ce guide global
+├── .gitignore                # pour ignorer les erreurs typescript
 │
 ├── core/                     # @rashwright/core       (Zero dépendance runtime)
 ├── utils/                    # @rashwright/utils      (Zero dépendance runtime)
